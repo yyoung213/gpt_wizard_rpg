@@ -22,7 +22,7 @@ def render_lives():
 
 # 🎯 GPT로 문제 생성 (난이도는 스테이지 수 기반)
 def generate_question(stage):
-    prompt = f"너는 코딩 마법사야. 난이도 {stage}짜리 파이썬 초급 문제 하나만 출제해줘. 짧게 문제 설명만 해줘."
+    prompt = f"너는 코딩 마법사야. 난이도 {stage}짜리 파이썬 초급 문제 하나만 출제해줘. 짧게 문제 설명만 해줘. 말투는 마법사들이 쓸것 같은 말투로 문제를 내줘."
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
