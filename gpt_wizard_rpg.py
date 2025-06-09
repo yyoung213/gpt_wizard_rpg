@@ -3,7 +3,7 @@ import time
 from openai import OpenAI
 
 # OpenAI 클라이언트 객체 생성
-client = OpenAI(api_key="apikey")
+client = OpenAI(api_key="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")
 
 # 초기 세션 설정
 if "stage" not in st.session_state:
